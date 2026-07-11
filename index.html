@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Junaid Bhatti | Projects</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">JB<span>.</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hero-label">Junaid Bhatti</p>
+        <h1>Building things<br />for the <span>web</span></h1>
+        <p class="hero-desc">A collection of projects I've designed and built. Each one taught me something new.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img src="assets/profile.jpg" alt="Junaid Bhatti" class="hero-image" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-desc">Things I've built that I'm proud of</p>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" data-category="fullstack">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="card-overlay">
+              <a href="#" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" class="card-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">Full-Stack</span>
+            <h3>E-Commerce Platform</h3>
+            <p>A full-featured online store with product management, cart, payments, and admin dashboard.</p>
+            <div class="card-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #0d324d, #7f5a83);">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="card-overlay">
+              <a href="#" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" class="card-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">Frontend</span>
+            <h3>AI Chat Interface</h3>
+            <p>A modern chat UI with real-time messaging, typing indicators, and dark/light themes.</p>
+            <div class="card-tags">
+              <span>React</span><span>Socket.io</span><span>CSS Modules</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="design">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="card-overlay">
+              <a href="#" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" class="card-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">Design</span>
+            <h3>Analytics Dashboard</h3>
+            <p>Interactive dashboard with real-time charts, drag-and-drop widgets, and data export.</p>
+            <div class="card-tags">
+              <span>D3.js</span><span>Vue.js</span><span>Tailwind</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="fullstack">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #1b1464, #6c63ff);">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="card-overlay">
+              <a href="#" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" class="card-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">Full-Stack</span>
+            <h3>Task Manager</h3>
+            <p>Kanban-style project management tool with drag-and-drop, team collaboration, and notifications.</p>
+            <div class="card-tags">
+              <span>Next.js</span><span>Prisma</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="frontend">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #0b8793, #360033);">
+              <i class="fas fa-music"></i>
+            </div>
+            <div class="card-overlay">
+              <a href="#" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" class="card-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">Frontend</span>
+            <h3>Music Player</h3>
+            <p>A sleek web music player with playlist management, visualizations, and keyboard shortcuts.</p>
+            <div class="card-tags">
+              <span>React</span><span>Howler.js</span><span>SCSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="design">
+          <div class="card-image">
+            <div class="card-img-placeholder" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+              <i class="fas fa-palette"></i>
+            </div>
+            <div class="card-overlay">
+              <a href="#" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" class="card-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-category">Design</span>
+            <h3>Design System</h3>
+            <p>A comprehensive component library with documentation, accessibility, and theme customization.</p>
+            <div class="card-tags">
+              <span>Storybook</span><span>Figma</span><span>CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="section-desc">Have a project in mind? Let's talk about it.</p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>your.email@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Your City, Country</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+          </div>
+          <input type="text" placeholder="Subject" required />
+          <textarea rows="5" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Junaid Bhatti. Built with <i class="fas fa-heart"></i></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
