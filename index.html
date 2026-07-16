@@ -16,6 +16,7 @@
       <ul class="nav-menu" id="navMenu">
         <li><a href="#hero" class="nav-link active">Home</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#chat" class="nav-link">AI Chat</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
@@ -171,6 +172,58 @@
             <div class="card-tags">
               <span>Storybook</span><span>Figma</span><span>CSS</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Chat -->
+  <section id="chat" class="chat-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">AI Chat Dashboard</h2>
+        <p class="section-desc">A ChatGPT-style AI assistant interface I built</p>
+      </div>
+
+      <div class="chat-window">
+        <div class="chat-sidebar">
+          <div class="chat-sidebar-header">
+            <button class="chat-new-btn" id="newChatBtn"><i class="fas fa-plus"></i> New chat</button>
+          </div>
+          <div class="chat-history" id="chatHistory">
+            <div class="chat-history-item active" data-id="1">
+              <i class="fas fa-message"></i>
+              <span>New conversation</span>
+            </div>
+          </div>
+          <div class="chat-sidebar-footer">
+            <div class="chat-user">
+              <div class="chat-avatar">JB</div>
+              <span>Junaid Bhatti</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-main">
+          <div class="chat-messages" id="chatMessages">
+            <div class="chat-welcome">
+              <div class="chat-welcome-icon"><i class="fas fa-robot"></i></div>
+              <h3>How can I help you today?</h3>
+              <div class="chat-suggestions">
+                <button class="chat-suggestion" data-msg="Explain how React hooks work">Explain how React hooks work</button>
+                <button class="chat-suggestion" data-msg="Write a Python function to sort a list">Write a Python function to sort a list</button>
+                <button class="chat-suggestion" data-msg="What are the best practices for CSS?">What are the best practices for CSS?</button>
+              </div>
+            </div>
+          </div>
+          <div class="chat-input-area">
+            <div class="chat-input-wrap">
+              <textarea id="chatInput" placeholder="Message AI Assistant..." rows="1"></textarea>
+              <button class="chat-send" id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+            <p class="chat-disclaimer">AI can make mistakes. Verify important information.</p>
           </div>
         </div>
       </div>
